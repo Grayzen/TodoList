@@ -5,10 +5,6 @@
                 Dashboard
             </inertia-link>
 
-            <inertia-link v-if="$page.props.auth.user" href="/todo" class="text-sm text-gray-700 underline">
-                Todo
-            </inertia-link>
-
             <template v-else>
                 <inertia-link :href="route('login')" class="text-sm text-gray-700 underline">
                     Log in

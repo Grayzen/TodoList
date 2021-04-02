@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+// use Inertia\Inertia;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Schema::defaultStringLength(191);
+
+        // Inertia::share('app.name', config('app.name'));
+
+        // Inertia::share('success', function ()
+        // {
+        //     return session()->get('success') ? session()->get('success') : null;
+        // });
     }
 }

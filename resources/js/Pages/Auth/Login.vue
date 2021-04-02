@@ -28,6 +28,10 @@
                 Forgot your password?
             </inertia-link>
 
+            <inertia-link :href="route('register')" class="ml-4 text-sm text-gray-700 underline">
+                Register
+            </inertia-link>
+
             <breeze-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                 Log in
             </breeze-button>

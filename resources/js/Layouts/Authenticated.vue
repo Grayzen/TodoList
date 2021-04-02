@@ -18,11 +18,17 @@
                                 <breeze-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </breeze-nav-link>
+                                <breeze-nav-link :href="route('tasks')" :active="route().current('tasks')">
+                                    Tasks
+                                </breeze-nav-link>
                                 <breeze-nav-link :href="route('projects')" :active="route().current('projects')">
                                     Projects
                                 </breeze-nav-link>
-                                <breeze-nav-link :href="route('todo')" :active="route().current('todo')">
-                                    To do
+                                <breeze-nav-link :href="route('solutions')" :active="route().current('solutions')">
+                                    Solutions
+                                </breeze-nav-link>
+                                <breeze-nav-link :href="route('tests')" :active="route().current('tests')">
+                                    Tests
                                 </breeze-nav-link>
                             </div>
                         </div>
@@ -70,6 +76,18 @@
                     <div class="pt-2 pb-3 space-y-1">
                         <breeze-responsive-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard
+                        </breeze-responsive-nav-link>
+                        <breeze-responsive-nav-link :href="route('tasks')" :active="route().current('tasks')">
+                            Tasks
+                        </breeze-responsive-nav-link>
+                        <breeze-responsive-nav-link :href="route('projects')" :active="route().current('projects')">
+                            Projects
+                        </breeze-responsive-nav-link>
+                        <breeze-responsive-nav-link :href="route('solutions')" :active="route().current('solutions')">
+                            Solutions
+                        </breeze-responsive-nav-link>
+                        <breeze-responsive-nav-link :href="route('tests')" :active="route().current('tests')">
+                            Tests
                         </breeze-responsive-nav-link>
                     </div>
 
@@ -119,7 +137,6 @@
             BreezeNavLink,
             BreezeResponsiveNavLink,
         },
-
         data() {
             return {
                 showingNavigationDropdown: false,
